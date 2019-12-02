@@ -23,6 +23,12 @@ properties:
   elasticsearch_config.elasticsearch.port:
     description: "the elasticsearch master node port"
     default: 9200
+  elasticsearch_config.shards:
+     description: "The elasticsearch shards number"
+     default: 5
+  elasticsearch_config.replicas:
+     description: "The elasticsearch replicas number"
+     default: 1
   elasticsearch_config.index_prefix:
     description: |
       Name prefix of your log indices that can uniquely distinguish them among other ES indices if apply pattern '*' to it, e.g. 'logs-*'. 

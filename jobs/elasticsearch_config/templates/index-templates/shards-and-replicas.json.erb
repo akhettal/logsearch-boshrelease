@@ -2,7 +2,7 @@
   "template": "<%= p('elasticsearch_config.index_prefix') %>*",
   "order": 100,
   "settings": { 
-    "number_of_shards": 5,
-    "number_of_replicas" : 1    
+    "number_of_shards": <%= p('elasticsearch_config.shards') %>*",
+    "number_of_replicas" : <%= p('elasticsearch_config.replicas') %>*"
   }
 }
